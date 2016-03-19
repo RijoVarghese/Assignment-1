@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  <title>The India Craft House</title>
+  <link rel="stylesheet" type="text/css" href="CSS/About.css"/>
+</head>
+
+<body>
+<div id="header">
+  <h1 id = "name"><a href = "controlflow.pdf">The Indian Craft House</a></h1> 
+</div>
+
+<div id="nav">
+	<table >
+			<tr>
+				<th><a href = "Home.html"><img src="Images/Icons/home.png" alt="Home"></a></th>
+				<th><a href = "Catalog.html">Catalog</a></th>
+				<th><a href = "Arts.html">Art Gallary</a></th>
+				<th>About Us</th>
+				<th><a href = "Contact.html">Contact Us</a></th>
+				<th><a href = "Location.html">Location</a></th>
+			</tr>
+	</table>
+</div>
+
+<div id="section">
+	<table>
+		<tr>
+			<form action="Home.html">
+				  First name:<br>
+				  <input type="text" name="firstName" id="firstName">
+				  <br><br>
+				  Last name:<br>
+				  <input type="text" name="lastname" value="" >
+				  <br><br>
+				  Phone:<br>
+				  <input type="text" name="phone" value="" >
+				  <br><br>
+				  Email:<br>
+				  <input type="email" name="email" id="email"/>
+				  <br><br>
+				  Address:<br>
+				  <textarea rows="4" cols="50"></textarea> 
+				  <button type="submit"  onclick="submitform()" id="submit">Submit</button>
+				  <script>
+					function submitform() {
+     					var win = window.open("", "MsgWindow", "width=800, height=300");
+						win.document.open();
+						win.document.write("<h1>Thank you for shopping with The Indian Craft House!</h1>");
+						win.document.close(); 
+					}
+	             </script> 
+			</form>
+		</tr>
+	</table>
+</div>
+
+<div id="footer">
+<table>
+<tr><td colspan = 3>follow us</td></tr>
+<tr><td>
+<a  href = "http://www.facebook.com"><img src="Images/Social/Facebook.png" alt="Facebook"></a>
+<a  href = "http://www.twitter.com"><img src="Images/Social/Twitter.png" alt="Twitter"></a>
+<a  href = "http://www.instagram.com"><img src="Images/Social/Instagram.png" alt="Instagram"></a>
+</td></tr>
+</table>
+</div>
+
+</body>
+</html>
