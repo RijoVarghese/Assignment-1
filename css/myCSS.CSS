@@ -4,11 +4,22 @@ body
 	background-image: url("../Images/Icons/background1.jpg");
 	padding: 70px;
 	padding-top: 70px;
+	padding-bottom: 100px;
 }
 
 .navbar-text > a {
 	color: inherit;
 	text-decoration: none;
+}
+
+.img-container{
+  height: 400px;
+  width: 250px;
+  img{
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+  }
 }
 
 #header {
@@ -56,6 +67,7 @@ body
     float:center;
     padding:10px;
 	margin-left: 30%;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #footer {

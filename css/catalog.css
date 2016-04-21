@@ -1,9 +1,10 @@
 body 
 {
-	font-family:"Times New Roman",Georgia,Serif;
+	font-family: 'Open Sans', sans-serif;
 	background-image: url("../Images/Icons/background.jpg");
 	padding: 70px;
 	padding-top: 70px;
+	padding-bottom: 100px;
 }
 
 .navbar-text > a {
