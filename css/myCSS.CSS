@@ -1,7 +1,7 @@
 body 
 {
 	font-family:"Times New Roman",Georgia,Serif;
-	background-image: url("../Images/Icons/background.jpg");
+	background-image: url("../Images/Icons/background1.jpg");
 	padding: 70px;
 	padding-top: 70px;
 }
@@ -11,13 +11,12 @@ body
 	text-decoration: none;
 }
 
-
 #header {
     
     color:black;
     text-align:center;
-    padding:3px;
-    font-size: 30px;
+    padding:5px;
+	font-size: 30px;
 }
 #nav {
 	margin: 0 auto;
@@ -28,11 +27,8 @@ body
 	background-repeat: no-repeat;
     height:100%;
     width:45%;
-    float:bottom;	      
-}
-#nav img{
-	width:50px;
-	height:50px;
+    float:bottom;
+    padding:50px;	      
 }
 #nav table{
 	color:black;
@@ -47,26 +43,27 @@ body
 }
 #section table{
 	color:black;
+	font-size: 20px;
+	width:100%;
+	text-align:center
+}
+
+#section p{
+	color:black;
 	font-size: 22px;
 	font-style: bold;
-	width:400%;
-	text-align:right;
-	border-spacing:15px;
-	padding: 5px;
+	width:1500px;
+    float:center;
+    padding:10px;
+	margin-left: 30%;
 }
 
-
-#section img{
-	width:150px;
-	height:150px;	
-}
 #footer {
     line-height:30px;
     color:white;
     clear:both;
     text-align:center;
-    padding:5px;	 
-	font-style: bold;	
+    padding:5px;	 	 
 }
 
 #footer table{
@@ -98,4 +95,3 @@ body
   opacity:1; 
 	margin-bottom: 2px;
 }
-
