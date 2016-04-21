@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>  
   <title>The India Craft House</title>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="content-type" content="text/html; charset=windows-1252">
   <link rel="stylesheet" type="text/css" href="css/myCSS.css"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -13,47 +15,120 @@
 </head>
 
 <body>
-
-<div class="container" id="header">
-  <h1 id = "name">The Indian Craft House</h1>            
-  <table class="table .table-condensed">
-      <tr>
-        <tr>
-			<th>Home</th>
-			<th><a href = "Catalog.html">Catalog</a></th>
-			<th><a href = "Contact.html">Contact Us</a></th>
-			<th><a href = "Location.html">Location</a></th>
-		</tr>
-   </table>
-   <div class="panel-heading"><b>HIGHTLIGHTS</b></div>
-   <div class="panel-body">
-	<table class="table .table-condensed">
-      <tr>
-        <td><a target="_blank"  href = "Catalog.html">
-			<img src="Images/crafts/1.jpg" alt="OUR HOME MADE SPECIAL" width="304" height="236"> OUR HOME MADE SPECIAL</a>
-		</td>
-        <td><a target="_blank"  href = "Catalog.html">
-			<img src="Images/crafts/2.jpg" alt="OUR DISCOUNT CRAFTS" width="304" height="236">OUR DISCOUNTED CRAFTS</a>
-		</td>
-        <td><a target="_blank" href = "Catalog.html">
-			<img src="Images/crafts/3.jpg" alt="OUR HANDICRAFTS" width="304" height="236">OUR HANDICRAFTS</a>
-		</td>
-		<td><a target="_blank" href = "Catalog.html">
-			<img src="Images/crafts/4.png" alt="METAL CRAFTS" width="304" height="236">METAL CRAFTS</a>
-		</td>
-       </tr>
-	  </table>
-	 </div>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><b>The Indian Craft House</b></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>       
+            <li><a href = "Catalog.html">Catalog</a></li>
+			<li><a href = "Location.html">Location</a></li>
+			<li><a href="#contact" data-toggle="modal">Contact</a></li>			
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	
+	
+	
+	
+	
+	<div class="container" id="header">
+	  <h1 id = "name"></h1>            
 	 
-      <div class="navbar-text pull-right">
-		<a href = "http://www.facebook.com"><i class="fa fa-facebook-square fa-2x"></i></a>
-		<a href = "http://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
-		<a href = "http://www.instagram.com"><i class="fa fa-instagram fa-2x" ></i></a>	
+	   <div class="panel-heading"><b>HIGHTLIGHTS</b></div>
+	   <div class="panel-body">
+		<table class="table .table-condensed">
+		  <tr>
+			<td><a target="_blank"  href = "Catalog.html">
+				<img src="Images/crafts/1.jpg" alt="OUR HOME MADE SPECIAL" width="304" height="236"> OUR HOME MADE SPECIAL</a>
+			</td>
+			<td><a target="_blank"  href = "Catalog.html">
+				<img src="Images/crafts/2.jpg" alt="OUR DISCOUNT CRAFTS" width="304" height="236">OUR DISCOUNTED CRAFTS</a>
+			</td>
+			<td><a target="_blank" href = "Catalog.html">
+				<img src="Images/crafts/3.jpg" alt="OUR HANDICRAFTS" width="304" height="236">OUR HANDICRAFTS</a>
+			</td>
+			<td><a target="_blank" href = "Catalog.html">
+				<img src="Images/crafts/4.png" alt="METAL CRAFTS" width="304" height="236">METAL CRAFTS</a>
+			</td>
+		   </tr>
+		  </table>
+		 </div>
+		 
+		
+				
+	  </table>
 	</div>
-			
-  </table>
-</div>
-
-
+	
+	
+	
+	<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    	<div class="container">
+    		<div class="navbar-text pull-left">
+    			<p><i class="fa fa-copyright"></i> The India Craft House.</p>
+    		</div>
+			<div class="navbar-text pull-right">
+				<a href = "http://www.facebook.com"><i class="fa fa-facebook-square fa-2x"></i></a>
+				<a href = "http://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
+				<a href = "http://www.instagram.com"><i class="fa fa-instagram fa-2x" ></i></a>	
+			</div>
+    	</div>
+    </div>
+	
+	 <div class="modal fade" id="contact" role="dialog">
+    	<div class="modal-dialog">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h4>Contact<h4>
+    			</div>
+    			<div class="modal-body">
+    				<table>
+						<tr>
+							<td>
+								<img src="Images/icons/contact_us.jpg" alt="" width="70" height="70">
+							</td>
+							<td>
+								<P align = "justify"><b>You can call The Indian Craft House Cutomer Happiness Team (ICHCHT):</b>
+								  We are available Mondays to Fridays- 10:30 am to 7:00 pm CST at +1-XXX-XXX-XXXX</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="mailto:RVarghese@my.harrisburgu.edu">
+								<img src="Images/icons/email.jpg" alt="" width="70" height="70" alt = "Mail Us"></a>
+							</td>
+							<td>
+								<P align = "justify"><b>Email Us:</b>
+								Email is the best medium to reach us. Please feel free to write to us at customercare@craftsvilla.com for any enquiry. We make sure that we reply to you in order we receive them and as quickly as possible</p>
+							</td>
+						</tr>
+						<tr >
+							<td colspan = "2">
+								<P align = "justify"><br><b>Are you looking for Something else?</b>
+									Seller Enquires: Want to feature your designs on our website! What are you waiting for? Please write into us with your details and contact number at <a href="mailto:RVarghese@my.harrisburgu.edu">places@theindiancrafthouse.com</a> and our team will call you back.<br><br>
+									Wholesale/Bulk/Corporate Enquires: Want to purchase our products in bulk or looking for an exciting offer your company! Contact us 	with the product details at <a href="mailto:RVarghese@my.harrisburgu.edu">wholesale@theindiancrafthouse.com</a><br><br>
+									Marketing: For Marketing enquires drop an email at <a href="mailto:RVarghese@my.harrisburgu.edu">Marketing@theindiancrafthouse.com</a></p>
+							</td>
+						</tr>
+					</table>
+    			</div>
+    			<div class="modal-footer">
+    				<a class="btn btn-primary" data-dismiss="modal">Close</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
