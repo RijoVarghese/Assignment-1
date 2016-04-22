@@ -12,6 +12,27 @@ body
 	text-decoration: none;
 }
 
+.img-container{
+  height: 350px;
+  width: 250px;
+  img{
+    max-height: 80%;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
 
 #header {
     

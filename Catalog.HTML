@@ -15,16 +15,22 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script>
+  <script> 
 	$(document).ready(function(){
-		$("td").click(function(){
-			$(this).hide();
+		$("#hide").click(function(){
+			$("p").hide();
+		});
+		$("#show").click(function(){
+			$("p").show();
 		});
 	});
-  </script>  
+  </script>
 </head>
 
 <body>
+	<a style="position: fixed; bottom:5px;left:5px;" href="#" title="Click to go to top">
+		<img src="Images\Icons\up.png" alt="Go To Top">
+	</a>
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 		  <div class="container">
 			<div class="navbar-header">
@@ -48,54 +54,497 @@
 		  </div>
 		</div>
 
-	<div id="section">
-		<table>
-		<tr><th colspan = "4" align = "left"> <b><br>Click to buy>>>>>>>><b></th></tr>
-		<tr>
-			<td>Special>>>>>>>></td>
-			<td><a href = "Pay.html"><img src="Images/Handicraft/9.png"></a></td>
-			<td><a href = "Pay.html"><img src="Images/Handicraft/11.png"></a></td>
-			<td><a href = "Pay.html"><img src="Images/Handicraft/8.png" ></a></td>
-		<tr>
-		<tr>
-			<td></td>
-			<td><a href = "Pay.html"><img src="Images/Art/1.png"></a></td>
-			<td><a href = "Pay.html"><img src="Images/Art/2.png"></a></td>
-			<td><a href = "Pay.html"><img src="Images/Art/3.png"></a></td>
-		<tr>
-		<tr>
-			<td>Metal Craft>>>>>>>></td>
-			<td><a href = "Pay.html"><img src="Images/Handicraft/2.png"></a></td>
-			<td><a href = "Pay.html"><img src="Images/Handicraft/3.png"></a></td>
-			<td><a href = "Pay.html"><img src="Images/Handicraft/4.png"></a></td>
-		<tr>
-		<tr>
-			<td>Handicrafts>>>>>>>></td>
-			<td><a href = "Pay.html"><img src="Images/Handicraft/5.png"></a></td>
-			<td><a href = "Pay.html"><img src="Images/Handicraft/9.png"></a></td>
-			<td><a href = "Pay.html"><img src="Images/Handicraft/15.png"></a></td>
-		<tr>
-		<tr>
-			<td></td>
-			<td><a href = "Pay.html"><img src="Images/Handicraft/1.png"></a></td>
-			<td><a href = "Pay.html"><img src="Images/Handicraft/7.png"></a></td>
-			<td><a href = "Pay.html"><img src="Images/Handicraft/10.png"></a></td>
-		<tr>
-		<tr>
-			<td>Discount Craft>>>>>>>></td>
-			<td><a href = "Pay.html"><img src="Images/Handicraft/14.png" ></a></td>
-			<td><a href = "Pay.html"><img src="Images/Handicraft/13.png"></a></td>
-			<td><a href = "Pay.html"><img src="Images/Handicraft/12.png" ></a></td>
-		<tr>
-		<tr>
-			<td></td>
-			<td><a href = "Pay.html"><img src="Images/Art/4.png"></a></td>
-			<td><a href = "Pay.html"><img src="Images/Art/5.png"></a></td>
-			<td><a href = "Pay.html"><img src="Images/Art/6.png"></a></td>
-		<tr>
-		</table>
-	</div>
+	<div class="container">
 
+        <div class="row ">
+
+            <div class="col-md-3">
+                <p class="lead">Category</p>
+                <div class="list-group">
+                    <a href="#Special" class="list-group-item">Special</a>
+                    <a href="#MetalCraft" class="list-group-item">Metal Craft</a>
+                    <a href="#Handicrafts" class="list-group-item">Handicrafts</a>
+					<a href="#DiscountCraft" class="list-group-item">Discount Craft</a>
+                </div>
+            </div>
+			<div class="col-md-9" id ="Special">
+				
+                <div class="row" >
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+						<a href="Pay.html">
+							<div class="thumbnail  img-container">
+								<img src="Images/Handicraft/9.png">
+								<div class="caption">
+									<h4 class="pull-right">$24.99</h4>
+									<h4><a href="Pay.html">Special 1</a>
+									</h4>
+								</div>
+								<div class="ratings">
+									<p class="pull-right">15 reviews</p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+									</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+					<div class="col-sm-4 col-lg-4 col-md-4">
+						<a href="Pay.html">
+							<div class="thumbnail img-container">
+								<img src="Images/Handicraft/11.png"> 
+								<div class="caption">
+									<h4 class="pull-right">$74.99</h4>
+									<h4>Special 2</h4>
+								</div>
+								<div class="ratings">
+									<p class="pull-right">15 reviews</p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+									</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+					<div class="col-sm-4 col-lg-4 col-md-4">
+						<a href="Pay.html">
+						<div class="thumbnail img-container">
+							<img src="Images/Handicraft/8.png">
+								<div class="caption">
+									<h4 class="pull-right">$24.99</h4>
+									<h4>Special 3</h4>
+								</div>
+								<div class="ratings">
+									<p class="pull-right">35 reviews</p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+									</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+				</div>
+				<div class="col-sm-4 col-lg-4 col-md-4">
+					<a href="Pay.html">
+						<div class="thumbnail img-container">
+							<img src="Images/Art/3.png">
+                            <div class="caption">
+                                <h4 class="pull-right">$24.99</h4>
+                                <h4>Special 4</h4>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">24 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+					</a>
+                </div>
+				<div class="col-sm-4 col-lg-4 col-md-4">
+					<a href="Pay.html">
+						<div class="thumbnail img-container">
+							<img src="Images/Art/2.png">
+                            <div class="caption">
+                                <h4 class="pull-right">$50.99</h4>
+                                <h4>Special 5</h4>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">45 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+					</a>
+                    </div>
+						<div class="col-sm-4 col-lg-4 col-md-4">
+							<a href="Pay.html">
+							<div class="thumbnail img-container">
+							<img src="Images/Art/1.png">
+								<div class="caption">
+									<h4 class="pull-right">$84.99</h4>
+									<h4>Special 6</h4>
+								</div>
+								<div class="ratings">
+									<p class="pull-right">95 reviews</p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+									</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+				</div>
+			
+	
+			<div class="col-md-15" id ="MetalCraft">
+
+                <div class="row">
+					<div class="col-md-12">
+					<h3>Metal Craft</h3>
+				</div>
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+						<a href="Pay.html">
+							<div class="thumbnail  img-container">
+								<img src="Images/Handicraft/2.png">
+								<div class="caption">
+									<h4 class="pull-right">$34.99</h4>
+									<h4><a href="Pay.html">Metal Craft 1</a>
+									</h4>
+								</div>
+								<div class="ratings">
+									<p class="pull-right">17 reviews</p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+									</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+					<div class="col-sm-4 col-lg-4 col-md-4">
+						<a href="Pay.html">
+							<div class="thumbnail img-container">
+								<img src="Images/Handicraft/3.png"> 
+								<div class="caption">
+									<h4 class="pull-right">$94.99</h4>
+									<h4>Metal Craft 2</h4>
+								</div>
+								<div class="ratings">
+									<p class="pull-right">20 reviews</p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+									</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+					<div class="col-sm-4 col-lg-4 col-md-4">
+						<a href="Pay.html">
+						<div class="thumbnail img-container">
+							<img src="Images/Handicraft/4.png">
+								<div class="caption">
+									<h4 class="pull-right">54.99</h4>
+									<h4>Metal Craft 3</h4>
+								</div>
+								<div class="ratings">
+									<p class="pull-right">35 reviews</p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+									</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+				</div>
+				
+		</div>
+			<div class="col-md-9" id ="Handicrafts">
+				
+                <div class="row" >
+					<h3>Handicrafts</h3>
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+						
+						<a href="Pay.html">
+							<div class="thumbnail  img-container">
+								<img src="Images/Handicraft/7.png">
+								<div class="caption">
+									<h4 class="pull-right">$24.99</h4>
+									<h4><a href="Pay.html">Handicraft 1</a>
+									</h4>
+								</div>
+								<div class="ratings">
+									<p class="pull-right">15 reviews</p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+									</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+					<div class="col-sm-4 col-lg-4 col-md-4">
+						<a href="Pay.html">
+							<div class="thumbnail img-container">
+								<img src="Images/Handicraft/9.png"> 
+								<div class="caption">
+									<h4 class="pull-right">$74.99</h4>
+									<h4>Handicraft 2</h4>
+								</div>
+								<div class="ratings">
+									<p class="pull-right">15 reviews</p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+									</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+					<div class="col-sm-4 col-lg-4 col-md-4">
+						<a href="Pay.html">
+						<div class="thumbnail img-container">
+							<img src="Images/Handicraft/10.png">
+								<div class="caption">
+									<h4 class="pull-right">$24.99</h4>
+									<h4>Handicraft 3</h4>
+								</div>
+								<div class="ratings">
+									<p class="pull-right">35 reviews</p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+									</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+				</div>
+				<div class="col-sm-4 col-lg-4 col-md-4">
+					<a href="Pay.html">
+						<div class="thumbnail img-container">
+							<img src="Images/Handicraft/1.png">
+                            <div class="caption">
+                                <h4 class="pull-right">$24.99</h4>
+                                <h4>Handicraft 4</h4>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">24 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+					</a>
+                </div>
+				<div class="col-sm-4 col-lg-4 col-md-4">
+					<a href="Pay.html">
+						<div class="thumbnail img-container">
+							<img src="Images/Handicraft/15.png">
+                            <div class="caption">
+                                <h4 class="pull-right">$50.99</h4>
+                                <h4>Handicraft 5</h4>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">45 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+					</a>
+                    </div>
+						<div class="col-sm-4 col-lg-4 col-md-4">
+							<a href="Pay.html">
+							<div class="thumbnail img-container">
+							<img src="Images/Handicraft/5.png">
+								<div class="caption">
+									<h4 class="pull-right">$84.99</h4>
+									<h4>Handicraft 6</h4>
+								</div>
+								<div class="ratings">
+									<p class="pull-right">95 reviews</p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+									</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+			</div>
+			<div class="col-md-9" id ="DiscountCraft">
+				
+                <div class="row" >
+					<h3>Discount Craft</h3>
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+						
+						<a href="Pay.html">
+							<div class="thumbnail  img-container">
+								<img src="Images/Art/6.png">
+								<div class="caption">
+									<h4 class="pull-right">$24.99</h4>
+									<h4><a href="Pay.html">Discount Craft 1</a>
+									</h4>
+								</div>
+								<div class="ratings">
+									<p class="pull-right">15 reviews</p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+									</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+					<div class="col-sm-4 col-lg-4 col-md-4">
+						<a href="Pay.html">
+							<div class="thumbnail img-container">
+								<img src="Images/Art/5.png">
+								<div class="caption">
+									<h4 class="pull-right">$74.99</h4>
+									<h4>Discount Craft 2</h4>
+								</div>
+								<div class="ratings">
+									<p class="pull-right">15 reviews</p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+									</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+					<div class="col-sm-4 col-lg-4 col-md-4">
+						<a href="Pay.html">
+						<div class="thumbnail img-container">
+							<img src="Images/Art/4.png">
+								<div class="caption">
+									<h4 class="pull-right">$24.99</h4>
+									<h4>Discount Craft 3</h4>
+								</div>
+								<div class="ratings">
+									<p class="pull-right">35 reviews</p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+									</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+				</div>
+				<div class="col-sm-4 col-lg-4 col-md-4">
+					<a href="Pay.html">
+						<div class="thumbnail img-container">
+							<img src="Images/Handicraft/12.png">
+                            <div class="caption">
+                                <h4 class="pull-right">$24.99</h4>
+                                <h4>Discount Craft4</h4>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">24 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+					</a>
+                </div>
+				<div class="col-sm-4 col-lg-4 col-md-4">
+					<a href="Pay.html">
+						<div class="thumbnail img-container">
+							<img src="Images/Handicraft/13.png">
+                            <div class="caption">
+                                <h4 class="pull-right">$50.99</h4>
+                                <h4>Discount Craft 5</h4>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">45 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+					</a>
+                    </div>
+						<div class="col-sm-4 col-lg-4 col-md-4">
+							<a href="Pay.html">
+							<div class="thumbnail img-container">
+							<img src="Images/Handicraft/14.png">
+								<div class="caption">
+									<h4 class="pull-right">$84.99</h4>
+									<h4>Discount Craft 6</h4>
+								</div>
+								<div class="ratings">
+									<p class="pull-right">95 reviews</p>
+									<p>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+										<span class="glyphicon glyphicon-star-empty"></span>
+									</p>
+								</div>
+							</div>
+						</a>
+                    </div>
+			</div>
+		</div>
+	</div>
 	<div class="modal fade" id="contact" role="dialog">
     	<div class="modal-dialog">
     		<div class="modal-content">
