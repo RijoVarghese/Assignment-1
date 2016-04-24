@@ -13,6 +13,15 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+		$(document).ready(function(){
+			$("p").hover(function(){
+				$(this).css("background-color", "lightgrey");
+				}, function(){
+				$(this).css("background-color", "pink");
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -26,7 +35,7 @@
             <span class="icon-bar"></span>
 			<span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><b>The Indian Craft House</b></a>
+          <a class="navbar-brand" href="controlflow.pdf"><b>The Indian Craft House</b></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -159,7 +168,7 @@
 								<img src="Images/icons/email.jpg" alt="" width="70" height="70" alt = "Mail Us"></a>
 							</td>
 							<td>
-								<P align = "justify"><b>Email Us:</b>
+								<P><b>Email Us:</b>
 								Email is the best medium to reach us. Please feel free to write to us at customercare@craftsvilla.com for any enquiry. We make sure that we reply to you in order we receive them and as quickly as possible</p>
 							</td>
 						</tr>
