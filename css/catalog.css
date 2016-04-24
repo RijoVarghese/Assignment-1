@@ -6,12 +6,10 @@ body
 	padding-top: 70px;
 	padding-bottom: 100px;
 }
-
 .navbar-text > a {
 	color: inherit;
 	text-decoration: none;
 }
-
 .img-container{
   height: 350px;
   width: 250px;
